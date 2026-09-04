@@ -3,7 +3,7 @@
 class Coldstorage < Formula
   desc "Live terminal dashboard for a fleet of git repositories"
   homepage "https://github.com/crueber/coldstorage"
-  version "1.0.7"
+  version "1.0.8"
   license "MIT"
 
   livecheck do
@@ -15,20 +15,20 @@ class Coldstorage < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/crueber/coldstorage/releases/download/v#{version}/coldstorage_#{version}_macOS_arm64.tar.gz"
-      sha256 "682ffc9622d1d9a43cfac3a6bb98d4aa528c7fe20b02544d44bdd68ddf9a50af"
+      sha256 "e6ec86157096e256d760c313b0cadf082ba3a9c340734c4bdf3e7b3e5f8b24b9"
     else
       url "https://github.com/crueber/coldstorage/releases/download/v#{version}/coldstorage_#{version}_macOS_x86_64.tar.gz"
-      sha256 "0fa2f738898eaa4e16f4b98866564cc750aab8c77788dd6f732cca7d072c090c"
+      sha256 "b3ef98a4fbd5f88c5f22a1aecf7d2e8de752b89ebb5a01fdb887406e79e4e2d7"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/crueber/coldstorage/releases/download/v#{version}/coldstorage_#{version}_Linux_arm64.tar.gz"
-      sha256 "2f416027eed6f3e9678606c1311507d503eb57c0dc7f4e2d64302fdcf195ed45"
+      sha256 "6876f7478cc6934e5bdd58af68ff06d98ac6243cd178891021ca22eb9dd7a5d6"
     else
       url "https://github.com/crueber/coldstorage/releases/download/v#{version}/coldstorage_#{version}_Linux_x86_64.tar.gz"
-      sha256 "b6ab18c263515efc316559dcafaab752626fd245d66defb6f61c9c9d08de31b3"
+      sha256 "a0a2b87da1fd22324e407017ff31603d9f6a1e8b143595e900269e54bb52c09b"
     end
   end
 
